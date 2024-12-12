@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 3000;
 // Configuración de CORS
 app.use(cors()); // Aplica CORS para todas las rutas
 
+app.use(cors({ origin: 'https://a-time-for-lunch-vdfv.onrender.com' }));
+
 // Middleware para parsear JSON
 app.use(express.json());
 
